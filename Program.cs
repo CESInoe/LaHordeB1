@@ -12,9 +12,7 @@ namespace World
         static void Main(string[] args)
         {
             Character player = new Character("Player", 100, 10, 5,
-                                                new Weapon("Sword", 5),
-                                                new Spell[] {new Spell("Heal", SpellType.Heal, 10),
-                                                new Spell("Fireball", SpellType.Fireball, 20)});
+                                                new Weapon("Sword", 5));
             IEnemy[] enemies = new Enemy[] {
                 new Enemy("Goblin", 50, 5, 2),
                 new Enemy("Troll", 80, 8, 4),
@@ -37,16 +35,6 @@ namespace World
                 {
                     case 1:
                         player.AttackEnemy(enemies[currentEnemyIndex]);
-                        break;
-                    case 2:
-                        Console.Write("Choose a spell: ");
-                        for (int i = 0; i < player.KnownSpells.Length; i++)
-                        {
-                            Console.Write("(" + (i + 1) + ") " + player.KnownSpells[i].Name + " ");
-                        }
-                        Console.WriteLine();
-                        int.TryParse(Console.ReadLine(), out int spellIndex);
-                        player.CastSpell(player.KnownSpells[spellIndex -1], enemies[currentEnemyIndex]);
                         break;
                     case 3:
                         Console.Write("Choose a weapon: ");
