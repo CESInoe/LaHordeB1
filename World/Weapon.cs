@@ -16,5 +16,9 @@ namespace JeuCours.World
             Name = name;
             Damage = damage;
         }
+        public string WhoAmI()
+        {
+            return Name;
+        }
     }
 }

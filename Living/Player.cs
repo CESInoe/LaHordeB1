@@ -33,5 +33,10 @@ namespace JeuCours.Living
         {
             return Health <= 0;
         }
+
+        public void WhoAmI()
+        {
+            Console.WriteLine("I have a " + EquippedWeapon.WhoAmI());
+        }
     }
 }

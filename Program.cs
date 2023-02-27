@@ -12,7 +12,7 @@ namespace World
         static void Main(string[] args)
         {
             Character player = new Character("Player", 100, 10, 5,
-                                                new Weapon("Sword", 5));
+                                                new JeuCours.World.Weapon("Sword", 5));
             IEnemy[] enemies = new Enemy[] {
                 new Enemy("Goblin", 50, 5, 2),
                 new Enemy("Troll", 80, 8, 4),
