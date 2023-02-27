@@ -1,0 +1,15 @@
+C:\Users\noe.duclos\source\repos\JeuCours\bin\Debug\net7.0\JeuCours.exe
+C:\Users\noe.duclos\source\repos\JeuCours\bin\Debug\net7.0\JeuCours.deps.json
+C:\Users\noe.duclos\source\repos\JeuCours\bin\Debug\net7.0\JeuCours.runtimeconfig.json
+C:\Users\noe.duclos\source\repos\JeuCours\bin\Debug\net7.0\JeuCours.dll
+C:\Users\noe.duclos\source\repos\JeuCours\bin\Debug\net7.0\JeuCours.pdb
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.csproj.AssemblyReference.cache
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.AssemblyInfoInputs.cache
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.AssemblyInfo.cs
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.csproj.CoreCompileInputs.cache
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.dll
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\refint\JeuCours.dll
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.pdb
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\JeuCours.genruntimeconfig.cache
+C:\Users\noe.duclos\source\repos\JeuCours\obj\Debug\net7.0\ref\JeuCours.dll
