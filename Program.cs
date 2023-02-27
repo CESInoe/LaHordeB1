@@ -1,9 +1,11 @@
-﻿using World;
-using Player;
+﻿using JeuCours.World;
+using JeuCours.Living;
+using JeuCours.Interfaces;
 
-namespace JeuCours
+namespace World
 {
     using System;
+    using JeuCours.Living;
 
     class Program
     {
@@ -13,7 +15,7 @@ namespace JeuCours
                                                 new Weapon("Sword", 5),
                                                 new Spell[] {new Spell("Heal", SpellType.Heal, 10),
                                                 new Spell("Fireball", SpellType.Fireball, 20)});
-            Enemy[] enemies = new Enemy[] {
+            IEnemy[] enemies = new Enemy[] {
                 new Enemy("Goblin", 50, 5, 2),
                 new Enemy("Troll", 80, 8, 4),
                 new Enemy("Dragon", 200, 20, 10)

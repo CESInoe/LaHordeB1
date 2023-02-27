@@ -1,6 +1,7 @@
-﻿using World;
+﻿using JeuCours.Interfaces;
+using JeuCours.World;
 
-namespace Player
+namespace JeuCours.Living
 {
     public class Character
     {
@@ -23,14 +24,14 @@ namespace Player
             KnownSpells = knownSpells;
         }
 
-        public void AttackEnemy(Enemy enemy)
+        public void AttackEnemy(IEnemy enemy)
         {
-            int damage = Math.Max(0, Attack + EquippedWeapon.Damage - enemy.Defense);
-            enemy.Health -= damage;
+            int damage = Math.Max(0, Attack + EquippedWeapon.Damage);
+            enemy.TakeDamage( damage);
             Console.WriteLine(Name + " attacks " + enemy.Name + " with " + EquippedWeapon.Name + " for " + damage + " damage!");
         }
 
-        public void CastSpell(Spell spell, Enemy target)
+        public void CastSpell(Spell spell, IEnemy target)
         {
             if (!Array.Exists(KnownSpells, s => s == spell))
             {
@@ -46,7 +47,7 @@ namespace Player
             else if (spell.Type == SpellType.Fireball)
             {
                 int damage = spell.Amount;
-                target.Health -= damage;
+                target.TakeDamage(damage);
                 Console.WriteLine(Name + " casts " + spell.Name + " on " + target.Name + " for " + damage + " damage!");
             }
         }
@@ -56,37 +57,4 @@ namespace Player
             return Health <= 0;
         }
     }
-
-    public class Weapon
-    {
-        public string Name;
-        public int Damage;
-
-        public Weapon(string name, int damage)
-        {
-            Name = name;
-            Damage = damage;
-        }
-    }
-
-    public class Spell
-    {
-        public string Name;
-        public SpellType Type;
-        public int Amount;
-
-        public Spell(string name, SpellType type, int amount)
-        {
-            Name = name;
-            Type = type;
-            Amount = amount;
-        }
-    }
-
-    public enum SpellType
-    {
-        Heal,
-        Fireball
-    }
-
 }
