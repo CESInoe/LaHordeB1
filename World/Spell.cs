@@ -21,7 +21,16 @@ namespace JeuCours.World
     {
         internal String _name;
         public void cast(Object? target) {
-            Console.WriteLine("You hear the spell " + _name);
+            string targetName;
+            try
+            {
+                targetName = target.GetType().GetProperty("Name").ToString();
+            }catch(Exception)
+            {
+                targetName = "something";
+            }
+            if()
+            Console.WriteLine($"{targetName}You hear the spell {_name}");
 
         }
     }
@@ -35,8 +44,8 @@ namespace JeuCours.World
             if(target != null && target is IEnemy) {
                 IEnemy enemy = (IEnemy)target;
                 enemy.TakeDamage(20, true);
+                base.cast(target);
             }
-            base.cast(target);
         } 
     }
 }
